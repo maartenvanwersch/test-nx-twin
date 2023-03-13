@@ -1,0 +1,23 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2017", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@test-nx-twin/ui-next": ["libs/ui-next/src/index.ts"],
+      "@test-nx-twin/ui-next-real": ["libs/ui-next-real/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}
