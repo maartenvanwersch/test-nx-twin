@@ -3,11 +3,17 @@
     "@nrwl/next/babel"
   ],
   "plugins": [
+    "babel-plugin-macros",
     [
-      "styled-components",
+      "babel-plugin-styled-components",
       {
-        "pure": true,
         "ssr": true
+      }
+    ],
+    [
+      "@babel/plugin-syntax-typescript",
+      {
+        "isTsx": true
       }
     ]
   ]
